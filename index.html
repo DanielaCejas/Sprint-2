@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>SPRINT 2</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section>
+      <!-- Titulo de la app -->
+      <div class="titulo">
+        <h1>App de gastos</h1>
+        <p>Ingresa cuanto pago cada persona</p>
+      </div>
+    </section>
+    <section>
+      <!-- Formulario de Bootstrap -->
+      <div class="container">
+        <div class="row">
+          <div class="col p-4">
+            <div class="mb-4" id="persona">
+              <!-- Id persona para Js -->
+              <label for="persona" class="form-label"
+                >Nombre de la Persona</label
+              >
+              <input id="persona"
+                type="text"
+                class="form-control"
+                id="persona"
+                placeholder="Lina"
+              />
+            </div>
+            <div class="mb-3" id="precio">
+              <!-- Id precio para Js -->
+              <label for="precio" class="form-label"
+                >Gasto</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="precio"
+                placeholder="740"
+              />
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+              <!-- Id boton para JS -->
+              <button id="miboton" class="btn btn-primary" type="button">
+                Enviar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+    <div id="mirespuesta"></div><!-- Id respuesta del boton -->
+    </section>
+    <section>
+      <div>
+        <p class="result" id="result">
+          Total : <span id="costo-total">...</span>
+        </p>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="acciones.js"></script>
+  </body>
+</html>
